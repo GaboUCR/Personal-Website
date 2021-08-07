@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  {% for project in projects%}
+    {{project|safe}}
+  {% endfor %}
+
+{% endblock %}
